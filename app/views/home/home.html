@@ -1,0 +1,67 @@
+<!-- <h1>home</h1> -->
+<!-- <div id="home">
+    <div class="home_navbar">
+        <h1>这就是home</h1>
+    </div>
+    <div ui-view class="home_content">
+        <a ui-serf ='main'>main</a>
+
+    </div>
+</div> -->
+<main>
+    <div>
+        <div>
+            <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                    <img ng-src="{{slide.image}}" style="margin:auto;" class="carouseImg">
+                    <div class="carousel-caption">
+                        <!-- <h4>Slide {{slide.id}}</h4> -->
+                        <!-- <p>{{slide.text}}</p> -->
+                    </div>
+                </uib-slide>
+            </uib-carousel>
+        </div>
+    </div>
+<!-- 经营理念 -->
+    <div class="container ideas" >
+        <ul id="idea" class="clearfix">
+            <li>
+                <div>
+                    <i></i>
+                    <span>公开透明，保障安全</span>
+                </div>
+
+            </li>
+            <li>
+                <div>
+                    <i></i>
+                     <span>生态种植，传统农耕</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <i></i>
+                    <span>监督机制,PGS参与式保障</span>
+                </div>
+            </li>
+        </ul>
+        <ul id="func">
+            <li>
+                <p><a href=""><img src="app/image/product.jpg" alt=""></a></p>
+                <h4><a href="">今日产品</a></h4>
+            </li>
+            <li>
+                <p><a href=""><img src="app/image/vip.jpg" alt=""></a></p>
+                <h4><a href="">会员服务</a></h4>
+            </li>
+            <li>
+                <p><a href=""><img src="app/image/taocan3.jpg" alt=""></a></p>
+                <h4><a href="">安心承诺</a></h4>
+            </li>
+            <li>
+                <p><a href=""><img src="app/image/address.jpg" alt=""></a></p>
+                <h4><a href="">农场介绍</a></h4>
+            </li>
+        </ul>
+    </div>
+</main>
